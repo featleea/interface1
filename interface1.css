@@ -1,0 +1,70 @@
+body {
+  background: black;
+  color: white;
+  font-family: monospace;
+
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ROTE Pop-ups */
+.popup-red {
+  position: absolute;
+  width: 220px;
+  padding: 15px;
+
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid red;
+  box-shadow: 0 0 10px red;
+
+  color: white;
+  font-family: monospace;
+
+  animation: glitch 0.3s infinite;
+}
+
+/* NEONGRÜNE Pop-ups */
+.popup-green {
+  position: absolute;
+  width: 220px;
+  padding: 15px;
+
+  background: rgba(0, 255, 0, 0.15);
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+
+  color: #ccffcc;
+  font-family: monospace;
+
+  animation: glitch 0.3s infinite;
+}
+
+/* SYMBOL-Fenster */
+.popup-symbol {
+  position: absolute;
+  width: 180px;
+  padding: 20px;
+
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 12px #00ff00;
+
+  color: #b6ffb6;
+  font-family: monospace;
+  font-size: 22px;
+  text-align: center;
+
+  animation: glitch 0.25s infinite;
+}
+
+/* Glitch Animation */
+@keyframes glitch {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-2px, 2px); }
+  50% { transform: translate(2px, -2px); }
+  75% { transform: translate(-1px, -1px); }
+  100% { transform: translate(0, 0); }
+}
